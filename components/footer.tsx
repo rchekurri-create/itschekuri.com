@@ -5,7 +5,7 @@ import { SocialLinks } from "@/components/social-links";
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-zinc-950">
+    <footer className="border-t border-white/10 bg-zinc-950/92">
       <div className="page-shell grid gap-8 py-10 md:grid-cols-[1fr_auto] md:items-center">
         <div>
           <Link href="/" className="inline-flex items-center gap-3 text-lg font-black text-white">
@@ -20,7 +20,7 @@ export function Footer() {
             </span>
             <span>itschekuri</span>
           </Link>
-          <p className="mt-2 max-w-xl text-sm leading-6 text-zinc-500">
+          <p className="mt-3 max-w-xl text-sm leading-6 text-zinc-500">
             Raja Vamsi Chekuri&apos;s digital headquarters for technology consulting, solution design, AI adoption, and practical business transformation.
           </p>
         </div>

@@ -1,14 +1,18 @@
 import {
   BrainCircuit,
+  BriefcaseBusiness,
   Code2,
   Cloud,
   Cpu,
+  Handshake,
+  Layers3,
   Mail,
   Network,
   Rocket,
   Satellite,
   Sparkles,
   Terminal,
+  Workflow,
   Wrench,
 } from "lucide-react";
 
@@ -63,6 +67,45 @@ export const techStack = [
   "Business Process Optimization",
 ];
 
+export const services = [
+  {
+    title: "Business Solution Design",
+    description: "Translate goals, constraints, and operational friction into clear solution blueprints.",
+    icon: Layers3,
+    accent: "orange",
+  },
+  {
+    title: "IT Consulting",
+    description: "Evaluate platforms, risks, opportunities, and implementation paths with practical business context.",
+    icon: BriefcaseBusiness,
+    accent: "blue",
+  },
+  {
+    title: "Product Strategy",
+    description: "Shape ideas into user-focused product direction, feature priorities, and value-driven roadmaps.",
+    icon: Rocket,
+    accent: "pink",
+  },
+  {
+    title: "Technology Advisory",
+    description: "Connect executive priorities, customer needs, and technical options into confident decisions.",
+    icon: Handshake,
+    accent: "white",
+  },
+  {
+    title: "Digital Transformation",
+    description: "Modernize processes, systems, and adoption plans without losing sight of the people involved.",
+    icon: Workflow,
+    accent: "purple",
+  },
+  {
+    title: "AI Integration",
+    description: "Identify realistic AI use cases, design pilots, and build responsible automation patterns.",
+    icon: BrainCircuit,
+    accent: "blue",
+  },
+];
+
 export const projects = [
   {
     title: "itschekuri Advisory Hub",
@@ -72,6 +115,7 @@ export const projects = [
     status: "Building",
     category: "Brand",
     tags: ["Website", "Advisory", "Content"],
+    outcome: "A clearer home for professional positioning, insights, and business technology guidance.",
     github: "https://github.com/itschekuri",
     demo: "https://itschekuri.com",
   },
@@ -83,6 +127,7 @@ export const projects = [
     status: "Planning",
     category: "AI",
     tags: ["AI", "Automation", "Transformation"],
+    outcome: "A repeatable way to move from AI curiosity to pilots with measurable operational value.",
     github: "https://github.com/itschekuri",
     demo: "https://itschekuri.com/labs",
   },
@@ -94,6 +139,7 @@ export const projects = [
     status: "Planned",
     category: "Insights",
     tags: ["Blog", "Case Studies", "Strategy"],
+    outcome: "Decision support for teams comparing tools, process changes, and implementation tradeoffs.",
     github: "https://github.com/itschekuri",
     demo: "https://itschekuri.com/blog",
   },
