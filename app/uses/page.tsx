@@ -9,7 +9,7 @@ export default function UsesPage() {
   return (
     <main className="pt-28">
       <MotionSection className="page-shell py-16">
-        <SectionHeader eyebrow="Uses" title="Tools, setup, and workflow." description="A future page for hardware, software, editor setup, apps, and the tools that help the workshop run." />
+        <SectionHeader eyebrow="Uses" title="Tools, setup, and workflow." description="A future page for the platforms, apps, research tools, and operating systems that support consulting, solution design, writing, and implementation planning." />
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {["Editor", "Hardware", "Cloud"].map((item) => (
             <article key={item} className="rounded-2xl border border-white/10 bg-white/[0.035] p-6">

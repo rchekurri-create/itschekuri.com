@@ -6,7 +6,7 @@ import { projects } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Projects and experiments from Raja Vamsi Chekuri.",
+  description: "Focus areas, advisory themes, and solution design initiatives from Raja Vamsi Chekuri.",
 };
 
 export default function ProjectsPage() {
@@ -16,9 +16,9 @@ export default function ProjectsPage() {
     <main className="pt-28">
       <MotionSection className="page-shell py-16">
         <SectionHeader
-          eyebrow="Projects"
-          title="A grid for useful things."
-          description="Each project supports status, categories, tags, screenshots, GitHub links, demos, and technology stacks."
+          eyebrow="Focus areas"
+          title="A practical map of business technology work."
+          description="Explore the themes that shape itschekuri: technology consulting, solution design, AI adoption, enterprise software, cloud transformation, and implementation strategy."
         />
         <div className="mt-8 flex flex-wrap gap-3">
           {categories.map((category) => (

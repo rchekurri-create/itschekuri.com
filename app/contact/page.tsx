@@ -7,7 +7,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Raja Vamsi Chekuri.",
+  description: "Contact Raja Vamsi Chekuri for technology consulting, solution design, AI adoption, and digital transformation conversations.",
 };
 
 export default function ContactPage() {
@@ -17,8 +17,8 @@ export default function ContactPage() {
         <div>
           <SectionHeader
             eyebrow="Contact"
-            title="Professional, friendly, and easy to reach."
-            description="Reach out for roles, collaborations, product ideas, writing, open source, or a good engineering conversation."
+            title="Let's talk about the business problem behind the technology."
+            description="Reach out for consulting conversations, solution design, product strategy, AI adoption, cloud transformation, implementation planning, or customer success work."
           />
           <a href={`mailto:${site.email}`} className="mt-8 inline-flex items-center gap-3 rounded-xl border border-cyan-300/30 bg-cyan-300/10 px-4 py-3 font-black text-cyan-100 hover:bg-cyan-300 hover:text-zinc-950">
             <Mail className="size-5" />
@@ -41,7 +41,7 @@ export default function ContactPage() {
             </label>
             <label className="grid gap-2 text-sm font-bold text-zinc-300">
               Message
-              <textarea name="message" rows={6} className="rounded-lg border border-white/10 bg-zinc-950/70 p-3 text-white" placeholder="What should we build or talk about?" />
+              <textarea name="message" rows={6} className="rounded-lg border border-white/10 bg-zinc-950/70 p-3 text-white" placeholder="What business challenge or technology opportunity should we discuss?" />
             </label>
             <button type="submit" className="min-h-12 rounded-lg bg-cyan-300 px-4 font-black text-zinc-950 transition hover:bg-emerald-300">
               Send Message

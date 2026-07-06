@@ -11,7 +11,7 @@ export function Footer() {
             itschekuri
           </Link>
           <p className="mt-2 max-w-xl text-sm leading-6 text-zinc-500">
-            Raja Vamsi Chekuri&apos;s digital workshop for software engineering, AI, cloud, product craft, and notes from the build.
+            Raja Vamsi Chekuri&apos;s digital headquarters for technology consulting, solution design, AI adoption, and practical business transformation.
           </p>
         </div>
         <SocialLinks />

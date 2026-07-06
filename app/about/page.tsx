@@ -7,7 +7,7 @@ import { interests, techStack } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn about Raja Vamsi Chekuri, the person behind itschekuri.",
+  description: "Learn about Raja Vamsi Chekuri, a technology consultant and business solution designer building itschekuri.",
 };
 
 export default function AboutPage() {
@@ -16,8 +16,8 @@ export default function AboutPage() {
       <MotionSection className="page-shell py-16">
         <SectionHeader
           eyebrow="About Raja"
-          title="A software engineer with a builder's curiosity."
-          description="I am Raja Vamsi Chekuri, building under the personal brand itschekuri. I care about useful software, clear thinking, elegant interfaces, and learning in public."
+          title="A business-minded technology consultant with a solution designer's lens."
+          description="I am Raja Vamsi Chekuri, building itschekuri as the personal brand for my work across IT consulting, product strategy, solution architecture, digital transformation, AI-driven solutions, and technology adoption."
         />
       </MotionSection>
 
@@ -30,9 +30,9 @@ export default function AboutPage() {
         </div>
         <div className="grid gap-5">
           {[
-            { icon: Lightbulb, title: "Professional story", body: "I enjoy taking ideas from rough sketches to working software, especially where engineering, AI, cloud, and product thinking overlap." },
-            { icon: Target, title: "Core values", body: "Curiosity, craft, clarity, kindness, iteration, and practical usefulness." },
-            { icon: Heart, title: "What I enjoy learning", body: "New technologies, system design patterns, open-source practices, technical writing, and the habits that make builders better over time." },
+            { icon: Lightbulb, title: "Professional story", body: "I help businesses translate ideas, operational challenges, and complex requirements into practical technology strategies and scalable solutions." },
+            { icon: Target, title: "Core values", body: "Clarity, trust, practical execution, measurable value, customer focus, and technology choices that serve real business goals." },
+            { icon: Heart, title: "What I enjoy exploring", body: "Enterprise software, AI adoption, cloud platforms, process automation, product thinking, implementation strategy, and the human side of change." },
           ].map((item) => {
             const Icon = item.icon;
             return (
@@ -48,13 +48,13 @@ export default function AboutPage() {
 
       <MotionSection className="page-shell grid gap-10 py-16 lg:grid-cols-2">
         <div>
-          <SectionHeader eyebrow="Timeline" title="Career journey." description="A future-ready timeline that can grow with roles, projects, milestones, and lessons learned." />
+          <SectionHeader eyebrow="Journey" title="Professional direction." description="A concise view of how itschekuri will grow into a resource for technology strategy, implementation insight, and business solution design." />
         </div>
         <Timeline />
       </MotionSection>
 
       <MotionSection className="page-shell py-16">
-        <SectionHeader eyebrow="Technical interests" title="What pulls my attention." />
+        <SectionHeader eyebrow="Focus areas" title="What pulls my attention." />
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {interests.map((item) => {
             const Icon = item.icon;
@@ -69,7 +69,7 @@ export default function AboutPage() {
       </MotionSection>
 
       <MotionSection className="page-shell py-16">
-        <SectionHeader eyebrow="Stack" title="Tools and technologies." />
+        <SectionHeader eyebrow="Capabilities" title="How I think about the work." />
         <div className="mt-8 flex flex-wrap gap-3">
           {techStack.map((item) => (
             <span key={item} className="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-black text-zinc-200">

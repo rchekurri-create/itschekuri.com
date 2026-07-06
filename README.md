@@ -1,6 +1,6 @@
 # itschekuri.com
 
-Personal website for Raja Vamsi Chekuri, built as a long-term digital workshop for projects, writing, experiments, and professional presence.
+Personal website for Raja Vamsi Chekuri, built as the digital headquarters for itschekuri: technology consulting, business solution design, AI adoption, implementation guidance, and professional insights.
 
 ## Tech Stack
 

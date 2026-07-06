@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, BrainCircuit, Code2, Sparkles, Zap } from "lucide-react";
+import { ArrowRight, BrainCircuit, Compass, Sparkles, Zap } from "lucide-react";
 import { AnimatedBackground } from "@/components/animated-background";
 import { BlogCard } from "@/components/blog-card";
 import { ButtonLink } from "@/components/button-link";
@@ -21,14 +21,14 @@ export default function Home() {
               Raja Vamsi Chekuri
             </div>
             <h1 className="max-w-4xl text-4xl font-black leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Building useful software in the <span className="text-gradient">itschekuri</span> workshop.
+              Helping businesses turn complex needs into practical <span className="text-gradient">technology solutions.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
-              A personal digital home for software engineering, AI, cloud computing, product development, technical writing, and whatever I am curious enough to build next.
+              I am Raja Vamsi Chekuri, building itschekuri as a digital headquarters for technology consulting, solution design, product strategy, AI adoption, cloud transformation, and implementation guidance.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <ButtonLink href="/projects">Explore projects</ButtonLink>
-              <ButtonLink href="/about" variant="secondary">Meet Raja</ButtonLink>
+              <ButtonLink href="/projects">Explore focus areas</ButtonLink>
+              <ButtonLink href="/about" variant="secondary">About Raja</ButtonLink>
             </div>
           </div>
 
@@ -37,7 +37,7 @@ export default function Home() {
               <div className="glass overflow-hidden rounded-3xl p-3">
                 <Image
                   src="/images/itschekuri-lab.png"
-                  alt="Abstract digital workshop visual for itschekuri"
+                  alt="Abstract digital headquarters visual for itschekuri"
                   width={1672}
                   height={941}
                   priority
@@ -63,15 +63,15 @@ export default function Home() {
 
       <MotionSection className="page-shell py-20">
         <SectionHeader
-          eyebrow="Digital workshop"
-          title="Somewhere between portfolio, engineering notebook, and creative lab."
-          description="The goal is simple: make the work feel alive. Not a static resume, not a generic template, but a place that shows curiosity through the things being built."
+          eyebrow="Professional positioning"
+          title="A trusted technology advisor for business-led transformation."
+          description="itschekuri is built around a simple belief: the best technology work starts with business context, clear requirements, practical solution design, and thoughtful adoption."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {[
-            ["Curious", "Following threads from AI systems to cloud architecture and product polish."],
-            ["Analytical", "Thinking in systems, tradeoffs, constraints, and clear interfaces."],
-            ["Always building", "Turning ideas into prototypes, notes, tools, and finished products."],
+            ["Discover", "Understand goals, process gaps, stakeholder needs, and opportunities for measurable improvement."],
+            ["Design", "Translate complex requirements into scalable, user-focused solutions and implementation plans."],
+            ["Deliver", "Support adoption with practical guidance, clear communication, and customer-focused execution."],
           ].map(([title, body]) => (
             <article key={title} className="rounded-2xl border border-white/10 bg-white/[0.035] p-6">
               <h3 className="text-xl font-black text-white">{title}</h3>
@@ -83,7 +83,7 @@ export default function Home() {
 
       <MotionSection className="page-shell py-20">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-          <SectionHeader eyebrow="Featured projects" title="Things taking shape." description="Project cards are ready for real screenshots, repositories, demos, categories, and status updates." />
+          <SectionHeader eyebrow="Focus areas" title="Where strategy becomes implementation." description="Core themes across consulting, solution architecture, enterprise software, AI-driven transformation, and business process optimization." />
           <ButtonLink href="/projects" variant="ghost">View all</ButtonLink>
         </div>
         <div className="mt-10 grid gap-5 lg:grid-cols-3">
@@ -95,7 +95,7 @@ export default function Home() {
 
       <MotionSection className="page-shell py-20">
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
-          <SectionHeader eyebrow="Technologies" title="Tools I keep close." description="A flexible stack for shipping fast, learning deeply, and keeping the craft sharp." />
+          <SectionHeader eyebrow="Capabilities" title="Business and technology disciplines." description="A practical mix of strategy, solution design, product thinking, adoption planning, and technology execution." />
           <div className="flex flex-wrap gap-3">
             {techStack.map((item) => (
               <span key={item} className="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-black text-zinc-200 transition hover:border-cyan-300/40 hover:bg-cyan-300/10">
@@ -110,19 +110,19 @@ export default function Home() {
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           <div className="rounded-3xl border border-white/10 bg-cyan-300 p-7 text-zinc-950 md:col-span-2">
             <Zap className="mb-8 size-8" />
-            <h2 className="text-3xl font-black tracking-tight sm:text-5xl">Currently experimenting with AI products, agent workflows, and cloud-native systems.</h2>
-            <p className="mt-5 max-w-2xl font-semibold text-zinc-800">The fun part is finding the tiny useful version first, then making it feel obvious.</p>
+            <h2 className="text-3xl font-black tracking-tight sm:text-5xl">Helping organizations discover, design, implement, and optimize technology solutions.</h2>
+            <p className="mt-5 max-w-2xl font-semibold text-zinc-800">The work is part strategy, part product thinking, part solution architecture, and always grounded in business value.</p>
           </div>
           <div className="grid gap-5">
             <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-              <Code2 className="mb-5 size-7 text-emerald-300" />
-              <h3 className="text-xl font-black text-white">What I&apos;m learning</h3>
-              <p className="mt-3 text-sm leading-6 text-zinc-400">AI engineering, better product thinking, scalable cloud patterns, and writing that teaches clearly.</p>
+              <Compass className="mb-5 size-7 text-emerald-300" />
+              <h3 className="text-xl font-black text-white">Advisory lens</h3>
+              <p className="mt-3 text-sm leading-6 text-zinc-400">I connect business goals, user needs, platform capabilities, implementation realities, and adoption risks.</p>
             </div>
             <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
               <BrainCircuit className="mb-5 size-7 text-purple-300" />
-              <h3 className="text-xl font-black text-white">Fun fact</h3>
-              <p className="mt-3 text-sm leading-6 text-zinc-400">I enjoy the messy middle where a rough idea starts becoming a useful system.</p>
+              <h3 className="text-xl font-black text-white">AI and digital transformation</h3>
+              <p className="mt-3 text-sm leading-6 text-zinc-400">I am especially interested in AI-driven solutions, automation, cloud technologies, and scalable enterprise software.</p>
             </div>
           </div>
         </div>
@@ -130,7 +130,7 @@ export default function Home() {
 
       <MotionSection className="page-shell py-20">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-          <SectionHeader eyebrow="Blog highlights" title="Notes from the build." description="The blog is ready for future technical writing, categories, reading time, and search." />
+          <SectionHeader eyebrow="Insights" title="Practical guidance for business technology decisions." description="A future home for case studies, technology trends, product reviews, implementation strategies, and lessons from solution consulting." />
           <ButtonLink href="/blog" variant="ghost">
             Visit blog
             <ArrowRight className="size-4" />
@@ -144,7 +144,7 @@ export default function Home() {
       </MotionSection>
 
       <MotionSection className="page-shell py-20">
-        <SectionHeader eyebrow="Interests" title="The orbit." align="center" />
+        <SectionHeader eyebrow="Positioning" title="What itschekuri stands for." align="center" />
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {interests.map((item) => {
             const Icon = item.icon;

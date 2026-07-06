@@ -4,13 +4,13 @@ import { MotionSection } from "@/components/motion-section";
 import { SectionHeader } from "@/components/section-header";
 import { experiments } from "@/data/site";
 
-export const metadata: Metadata = { title: "Labs", description: "Experiments from the itschekuri workshop." };
+export const metadata: Metadata = { title: "Labs", description: "Experiments in AI adoption, automation, and solution design from itschekuri." };
 
 export default function LabsPage() {
   return (
     <main className="pt-28">
       <MotionSection className="page-shell py-16">
-        <SectionHeader eyebrow="Labs" title="Small experiments, useful sparks." description="A future home for prototypes, demos, tiny tools, AI experiments, and playful technical ideas." />
+        <SectionHeader eyebrow="Labs" title="Small experiments for practical transformation." description="A future home for AI adoption experiments, automation ideas, solution prototypes, and tools that make business workflows easier to understand and improve." />
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {experiments.map((item) => {
             const Icon = item.icon;

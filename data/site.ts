@@ -18,7 +18,7 @@ export const site = {
   url: "https://itschekuri.com",
   email: "admin@itschekuri.com",
   description:
-    "The digital workshop of Raja Vamsi Chekuri: software engineering, AI, cloud, product development, open source, and technical writing.",
+    "The digital headquarters of Raja Vamsi Chekuri, helping businesses discover, design, implement, and optimize practical technology solutions.",
   nav: [
     { href: "/about", label: "About" },
     { href: "/projects", label: "Projects" },
@@ -40,60 +40,60 @@ export const site = {
 };
 
 export const interests = [
-  { title: "Software Engineering", icon: Code2 },
-  { title: "Artificial Intelligence", icon: BrainCircuit },
-  { title: "Cloud Computing", icon: Cloud },
-  { title: "Product Development", icon: Rocket },
-  { title: "Open Source", icon: Terminal },
-  { title: "Continuous Improvement", icon: Sparkles },
+  { title: "IT Consulting", icon: Network },
+  { title: "Business Solution Design", icon: Wrench },
+  { title: "Product Strategy", icon: Rocket },
+  { title: "Solution Architecture", icon: Terminal },
+  { title: "AI-Driven Solutions", icon: BrainCircuit },
+  { title: "Cloud Technologies", icon: Cloud },
 ];
 
 export const techStack = [
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Python",
-  "AI APIs",
-  "AWS",
-  "Docker",
-  "PostgreSQL",
-  "Tailwind CSS",
-  "GitHub Actions",
-  "Vercel",
+  "Business Strategy",
+  "Product Thinking",
+  "Solution Design",
+  "Enterprise Software",
+  "AI Adoption",
+  "Cloud Strategy",
+  "Process Automation",
+  "Customer Success",
+  "Technology Sales",
+  "Implementation Planning",
+  "Change Enablement",
+  "Business Process Optimization",
 ];
 
 export const projects = [
   {
-    title: "Personal Digital Workshop",
+    title: "itschekuri Advisory Hub",
     description:
-      "The long-term home for writing, experiments, products, and the itschekuri brand.",
-    stack: ["Next.js", "TypeScript", "Framer Motion", "Tailwind"],
+      "A professional home for strategy notes, solution frameworks, case studies, product reviews, and practical guidance for business technology leaders.",
+    stack: ["Brand Strategy", "Content System", "Consulting"],
     status: "Building",
-    category: "Personal",
-    tags: ["Website", "Design System", "Content"],
+    category: "Brand",
+    tags: ["Website", "Advisory", "Content"],
     github: "https://github.com/itschekuri",
     demo: "https://itschekuri.com",
   },
   {
-    title: "AI Product Experiments",
+    title: "AI Adoption Playbooks",
     description:
-      "Small focused prototypes exploring how AI can make useful workflows feel lighter.",
-    stack: ["Python", "OpenAI", "React", "Cloud"],
-    status: "Exploring",
-    category: "Labs",
-    tags: ["AI", "Automation", "Product"],
+      "Practical patterns for evaluating AI opportunities, designing low-risk pilots, and turning intelligent automation into measurable business value.",
+    stack: ["AI Strategy", "Automation", "Governance"],
+    status: "Planning",
+    category: "AI",
+    tags: ["AI", "Automation", "Transformation"],
     github: "https://github.com/itschekuri",
     demo: "https://itschekuri.com/labs",
   },
   {
-    title: "Engineering Notes",
+    title: "Solution Design Library",
     description:
-      "A searchable writing system for cloud patterns, frontend craft, and lessons from building.",
-    stack: ["MDX", "Next.js", "SEO", "Content"],
+      "A growing collection of implementation strategies, architecture notes, buying considerations, and process improvement examples.",
+    stack: ["Architecture", "Enterprise Tech", "Operations"],
     status: "Planned",
-    category: "Writing",
-    tags: ["Blog", "Technical Writing", "Learning"],
+    category: "Insights",
+    tags: ["Blog", "Case Studies", "Strategy"],
     github: "https://github.com/itschekuri",
     demo: "https://itschekuri.com/blog",
   },
@@ -101,28 +101,28 @@ export const projects = [
 
 export const posts = [
   {
-    title: "Designing a personal site like a product",
+    title: "Turning operational friction into a technology roadmap",
     excerpt:
-      "Why a personal website should feel like a living system, not a frozen resume.",
-    category: "Product",
-    readTime: "4 min read",
+      "A practical way to move from scattered business pain points to prioritized, implementable solution opportunities.",
+    category: "Strategy",
+    readTime: "5 min read",
     date: "Coming soon",
     featured: true,
   },
   {
-    title: "Notes from learning AI engineering",
+    title: "How to evaluate AI use cases before buying tools",
     excerpt:
-      "A practical notebook for prompts, tools, evals, and experiments that actually help.",
+      "A business-first checklist for finding AI opportunities that are useful, measurable, and realistic to adopt.",
     category: "AI",
     readTime: "6 min read",
     date: "Drafting",
     featured: false,
   },
   {
-    title: "Cloud patterns I keep reaching for",
+    title: "What makes enterprise software adoption succeed",
     excerpt:
-      "Small architecture choices that make projects easier to ship and operate.",
-    category: "Cloud",
+      "Lessons on implementation planning, customer success, process alignment, and stakeholder confidence.",
+    category: "Implementation",
     readTime: "5 min read",
     date: "Drafting",
     featured: false,
@@ -132,23 +132,23 @@ export const posts = [
 export const timeline = [
   {
     year: "Now",
-    title: "Building the itschekuri digital workshop",
-    body: "Creating a premium home for projects, notes, experiments, and professional presence.",
+    title: "Building the itschekuri advisory platform",
+    body: "Creating a professional home for technology strategy, solution design, digital transformation insights, and implementation guidance.",
   },
   {
     year: "Next",
-    title: "Publishing useful engineering notes",
-    body: "Turning learning and project work into searchable writing for other builders.",
+    title: "Publishing practical business technology guidance",
+    body: "Sharing case studies, technology trends, product reviews, implementation strategies, and frameworks for better decision-making.",
   },
   {
     year: "Always",
-    title: "Curious, analytical, and building",
-    body: "Following the thread from software engineering to AI, cloud, product, and open source.",
+    title: "Customer-focused, strategic, and implementation-minded",
+    body: "Helping organizations connect goals, requirements, people, and platforms into solutions that solve real business problems.",
   },
 ];
 
 export const experiments = [
-  { label: "Currently building", value: "Personal OS for projects", icon: Wrench },
-  { label: "Learning", value: "AI agents and cloud-native systems", icon: Cpu },
-  { label: "Writing about", value: "Product-minded engineering", icon: Sparkles },
+  { label: "Currently building", value: "itschekuri advisory headquarters", icon: Wrench },
+  { label: "Exploring", value: "AI adoption and intelligent automation", icon: Cpu },
+  { label: "Writing about", value: "Technology strategy that creates business value", icon: Sparkles },
 ];

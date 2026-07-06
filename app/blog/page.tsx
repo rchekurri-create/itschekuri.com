@@ -6,7 +6,7 @@ import { posts } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Technical writing and notes from the itschekuri workshop.",
+  description: "Insights, case studies, technology trends, product reviews, and implementation strategies from itschekuri.",
 };
 
 export default function BlogPage() {
@@ -17,9 +17,9 @@ export default function BlogPage() {
     <main className="pt-28">
       <MotionSection className="page-shell py-16">
         <SectionHeader
-          eyebrow="Blog"
-          title="Search-ready notes from the build."
-          description="Prepared for future articles, categories, reading time, featured posts, and technical writing."
+          eyebrow="Insights"
+          title="Practical notes for better technology decisions."
+          description="A home for case studies, technology trends, product reviews, implementation strategies, and guidance for businesses and technology professionals."
         />
       </MotionSection>
 
