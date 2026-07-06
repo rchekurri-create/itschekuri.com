@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, Sparkles, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -17,8 +18,15 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-zinc-950/62 backdrop-blur-2xl">
       <div className="page-shell flex min-h-16 items-center justify-between gap-4">
         <Link href="/" className="group flex items-center gap-3 font-black">
-          <span className="grid size-9 place-items-center rounded-lg bg-white text-sm text-zinc-950 shadow-[0_0_28px_rgba(34,211,238,0.25)]">
-            ic
+          <span className="grid size-10 place-items-center overflow-hidden rounded-xl border border-white/15 bg-zinc-900 shadow-[0_0_28px_rgba(34,211,238,0.25)]">
+            <Image
+              src="/images/itschekuri-logo.png"
+              alt="itschekuri logo"
+              width={80}
+              height={80}
+              priority
+              className="size-full object-cover"
+            />
           </span>
           <span className="text-white">itschekuri</span>
         </Link>

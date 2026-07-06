@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site } from "@/data/site";
 import { SocialLinks } from "@/components/social-links";
 
@@ -7,8 +8,17 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-zinc-950">
       <div className="page-shell grid gap-8 py-10 md:grid-cols-[1fr_auto] md:items-center">
         <div>
-          <Link href="/" className="text-lg font-black text-white">
-            itschekuri
+          <Link href="/" className="inline-flex items-center gap-3 text-lg font-black text-white">
+            <span className="grid size-10 place-items-center overflow-hidden rounded-xl border border-white/10 bg-zinc-900">
+              <Image
+                src="/images/itschekuri-logo.png"
+                alt="itschekuri logo"
+                width={80}
+                height={80}
+                className="size-full object-cover"
+              />
+            </span>
+            <span>itschekuri</span>
           </Link>
           <p className="mt-2 max-w-xl text-sm leading-6 text-zinc-500">
             Raja Vamsi Chekuri&apos;s digital headquarters for technology consulting, solution design, AI adoption, and practical business transformation.

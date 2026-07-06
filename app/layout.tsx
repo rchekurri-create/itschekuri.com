@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: site.description,
     url: site.url,
     siteName: "itschekuri",
-    images: [{ url: "/images/itschekuri-lab.png", width: 1672, height: 941, alt: "Abstract itschekuri digital headquarters visual" }],
+    images: [{ url: "/images/itschekuri-logo.png", width: 1024, height: 1024, alt: "itschekuri logo" }],
     locale: "en_US",
     type: "website",
   },
@@ -43,10 +43,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "itschekuri | Raja Vamsi Chekuri",
     description: site.description,
-    images: ["/images/itschekuri-lab.png"],
+    images: ["/images/itschekuri-logo.png"],
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 
