@@ -1,83 +1,115 @@
-import type { Metadata } from "next";
-import { Camera, Heart, Lightbulb, Target } from "lucide-react";
+import { Metadata } from "next";
+import { ButtonLink } from "@/components/button-link";
+import { CTA } from "@/components/cta";
 import { MotionSection } from "@/components/motion-section";
+import { PageHero } from "@/components/page-hero";
 import { SectionHeader } from "@/components/section-header";
-import { Timeline } from "@/components/timeline";
-import { interests, techStack } from "@/data/site";
+import { approach, platformAreas, valueDrivers } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn about Raja Vamsi Chekuri, a technology consultant and business solution designer building itschekuri.",
+  description: "Learn about Raja Vamsi Chekuri, IT Consultant and Business Solutions Designer behind itschekuri.",
 };
 
 export default function AboutPage() {
   return (
-    <main className="pt-28">
-      <MotionSection className="page-shell py-16">
-        <SectionHeader
-          eyebrow="About Raja"
-          title="A business-minded technology consultant with a solution designer's lens."
-          description="I am Raja Vamsi Chekuri, building itschekuri as the personal brand for my work across IT consulting, product strategy, solution architecture, digital transformation, AI-driven solutions, and technology adoption."
-        />
+    <main>
+      <PageHero
+        eyebrow="About"
+        title="I help businesses turn operational challenges into practical technology solutions."
+        description="Businesses do not need more software, they need the right solutions to solve the right problems."
+        primaryHref="/services"
+        primaryLabel="Explore Services"
+        secondaryHref="/connect"
+        secondaryLabel="Let's Connect"
+      />
+
+      <MotionSection className="page-shell grid gap-8 py-12 lg:grid-cols-[0.9fr_1.1fr]">
+        <SectionHeader eyebrow="Intro Story" title="Business-first consulting with practical technology execution." />
+        <div className="grid gap-5 text-base leading-8 text-zinc-400">
+          <p>
+            As an IT Consultant at Revel Consultants, I work with organizations to analyze business operations, design
+            efficient processes, and implement technology solutions that drive measurable business outcomes.
+          </p>
+          <p>
+            My focus is on aligning technology with business strategy to improve productivity, streamline operations,
+            and support long-term growth.
+          </p>
+          <p>
+            From process discovery and solution architecture to implementation, integration, and optimization, I help
+            organizations build scalable, connected systems that simplify complex workflows and enable informed
+            decision-making.
+          </p>
+        </div>
       </MotionSection>
 
-      <MotionSection className="page-shell grid gap-8 py-12 lg:grid-cols-[0.85fr_1.15fr]">
-        <div className="rounded-3xl border border-white/10 bg-white/[0.035] p-6">
-          <Camera className="mb-10 size-8 text-cyan-300" />
-          <div className="grid aspect-[4/5] place-items-center rounded-2xl border border-dashed border-white/15 bg-white/[0.03] text-center text-sm font-bold text-zinc-500">
-            Photo placeholder
-          </div>
+      <MotionSection className="page-shell py-12">
+        <div className="soft-card p-6 sm:p-8">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#ff8a00]">What I Believe</p>
+          <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight text-white">
+            The best solution is the one people can understand, adopt, and measure.
+          </h2>
+          <p className="mt-4 max-w-4xl text-base leading-8 text-zinc-400">
+            I enjoy partnering with businesses to transform ideas into practical, technology-driven solutions that
+            create lasting operational value.
+          </p>
         </div>
-        <div className="grid gap-5">
-          {[
-            { icon: Lightbulb, title: "Professional story", body: "I help businesses translate ideas, operational challenges, and complex requirements into practical technology strategies and scalable solutions." },
-            { icon: Target, title: "Core values", body: "Clarity, trust, practical execution, measurable value, customer focus, and technology choices that serve real business goals." },
-            { icon: Heart, title: "What I enjoy exploring", body: "Enterprise software, AI adoption, cloud platforms, process automation, product thinking, implementation strategy, and the human side of change." },
-          ].map((item) => {
+      </MotionSection>
+
+      <MotionSection className="page-shell py-12">
+        <SectionHeader eyebrow="My Approach" title="A clear path from discovery to optimization." />
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {approach.map((item) => {
             const Icon = item.icon;
             return (
-              <article key={item.title} className="rounded-3xl border border-white/10 bg-white/[0.035] p-6">
-                <Icon className="mb-5 size-7 text-emerald-300" />
-                <h2 className="text-2xl font-black text-white">{item.title}</h2>
-                <p className="mt-3 leading-7 text-zinc-400">{item.body}</p>
+              <article key={item.title} className={`soft-card accent-${item.accent} p-5`}>
+                <Icon className="size-6 accent-text" />
+                <h3 className="mt-5 font-semibold text-white">{item.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-zinc-400">{item.description}</p>
               </article>
             );
           })}
         </div>
       </MotionSection>
 
-      <MotionSection className="page-shell grid gap-10 py-16 lg:grid-cols-2">
+      <MotionSection className="page-shell grid gap-8 py-12 lg:grid-cols-[1fr_0.8fr]">
         <div>
-          <SectionHeader eyebrow="Journey" title="Professional direction." description="A concise view of how itschekuri will grow into a resource for technology strategy, implementation insight, and business solution design." />
+          <SectionHeader
+            eyebrow="Platforms & Solution Areas"
+            title="Experience across enterprise platforms and operational systems."
+            description="My experience spans business systems, infrastructure, security, cloud, data, automation, and digital workplace technologies."
+          />
         </div>
-        <Timeline />
-      </MotionSection>
-
-      <MotionSection className="page-shell py-16">
-        <SectionHeader eyebrow="Focus areas" title="What pulls my attention." />
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {interests.map((item) => {
-            const Icon = item.icon;
-            return (
-              <article key={item.title} className="rounded-2xl border border-white/10 bg-white/[0.035] p-5">
-                <Icon className="mb-4 size-6 text-cyan-300" />
-                <h3 className="font-black text-white">{item.title}</h3>
-              </article>
-            );
-          })}
+        <div className="soft-card p-5">
+          <ul className="grid gap-3 text-sm text-zinc-300">
+            {platformAreas.map((area) => (
+              <li key={area} className="flex gap-3">
+                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-[#ff8a00]" />
+                <span>{area}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </MotionSection>
 
-      <MotionSection className="page-shell py-16">
-        <SectionHeader eyebrow="Capabilities" title="How I think about the work." />
-        <div className="mt-8 flex flex-wrap gap-3">
-          {techStack.map((item) => (
-            <span key={item} className="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-black text-zinc-200">
+      <MotionSection className="page-shell py-12">
+        <SectionHeader eyebrow="How I Create Value" title="Simple outcomes that matter to business teams." />
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          {valueDrivers.map((item) => (
+            <div key={item} className="soft-card p-5 text-center text-sm font-semibold text-white">
               {item}
-            </span>
+            </div>
           ))}
         </div>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <ButtonLink href="/services">View Services</ButtonLink>
+          <ButtonLink href="/connect" variant="secondary">
+            Start a Conversation
+          </ButtonLink>
+        </div>
       </MotionSection>
+
+      <CTA />
     </main>
   );
 }

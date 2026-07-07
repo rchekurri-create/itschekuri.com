@@ -9,11 +9,11 @@ export function SocialLinks() {
           <a
             key={social.href}
             href={social.href}
-            className="group inline-flex min-h-10 items-center gap-2 rounded-lg border border-white/10 bg-white/[0.03] px-3 text-sm font-bold text-zinc-300 transition hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/[0.07] hover:text-white"
+            className="group inline-flex min-h-10 items-center gap-2 rounded-full border border-black/10 bg-white px-3 text-sm font-bold text-zinc-800 transition hover:-translate-y-0.5 hover:bg-zinc-100"
             target={social.href.startsWith("http") ? "_blank" : undefined}
             rel={social.href.startsWith("http") ? "noreferrer" : undefined}
           >
-            <Icon className="size-4 text-sky-300 transition group-hover:scale-110 group-hover:text-white" />
+            <Icon className="size-4 text-[#ef4b20] transition group-hover:scale-110 group-hover:text-black" />
             {social.label}
           </a>
         );

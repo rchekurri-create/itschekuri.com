@@ -6,11 +6,13 @@ type MotionSectionProps = {
   children: React.ReactNode;
   className?: string;
   delay?: number;
+  id?: string;
 };
 
-export function MotionSection({ children, className, delay = 0 }: MotionSectionProps) {
+export function MotionSection({ children, className, delay = 0, id }: MotionSectionProps) {
   return (
     <motion.section
+      id={id}
       className={className}
       initial={{ opacity: 0, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}

@@ -1,39 +1,22 @@
+import { Send } from "lucide-react";
 import { ButtonLink } from "@/components/button-link";
-import { SocialLinks } from "@/components/social-links";
-import { site } from "@/data/site";
 
 export function CTA() {
   return (
-    <section className="section-band accent-white page-shell py-24">
-      <div className="premium-card rounded-[2rem] p-8 sm:p-10 md:p-12">
-        <div className="grid gap-10 lg:grid-cols-[1fr_0.75fr] lg:items-end">
+    <section className="page-shell py-16">
+      <div className="soft-card relative isolate overflow-hidden p-8 sm:p-10">
+        <div className="absolute inset-y-0 right-0 -z-10 w-2/3 bg-gradient-to-l from-[#ff3cac]/18 via-[#a855f7]/10 to-transparent" />
+        <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.22em] text-white">Contact</p>
-            <h2 className="mt-4 max-w-3xl text-3xl font-black tracking-tight text-white sm:text-5xl">
-              Have a business challenge that needs a practical technology path?
-            </h2>
-            <p className="mt-4 max-w-2xl text-zinc-400">
-              I help connect strategy, product thinking, solution architecture, and implementation planning so ideas can become useful systems.
+            <div className="grid size-12 place-items-center rounded-full border border-[#ff3cac]/35 bg-[#ff3cac]/10 text-[#ff3cac]">
+              <Send className="size-5" />
+            </div>
+            <h2 className="mt-5 text-2xl font-semibold text-white sm:text-3xl">Have a business challenge?</h2>
+            <p className="mt-3 max-w-2xl text-base leading-7 text-zinc-400">
+              Let's discuss how the right solution can simplify your operations and create measurable value.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <ButtonLink href="/contact">Start a conversation</ButtonLink>
-              <ButtonLink href="mailto:admin@itschekuri.com" variant="secondary">
-                {site.email}
-              </ButtonLink>
-            </div>
           </div>
-          <div className="rounded-3xl border border-white/10 bg-white/[0.035] p-5">
-            <p className="text-xs font-black uppercase tracking-[0.2em] text-zinc-500">Useful links</p>
-            <div className="mt-5">
-              <SocialLinks />
-            </div>
-            <a
-              href="/contact"
-              className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-xl border border-white/10 bg-white text-sm font-black text-zinc-950 transition hover:scale-[1.01] hover:bg-zinc-200"
-            >
-              Calendar booking placeholder
-            </a>
-          </div>
+          <ButtonLink href="/connect">Let's Connect</ButtonLink>
         </div>
       </div>
     </section>
