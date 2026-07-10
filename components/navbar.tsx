@@ -14,11 +14,22 @@ export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
+  const handleRouteClick = (href: string) => (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (pathname !== href) {
+      setOpen(false);
+      return;
+    }
+
+    event.preventDefault();
+    setOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <header className="fixed inset-x-0 top-4 z-50">
       <div className="page-shell">
         <nav className="glass flex min-h-20 items-center justify-between rounded-[8px] px-5 py-3" aria-label="Primary navigation">
-          <Link href="/" className="inline-flex items-center gap-3" aria-label="itschekuri home">
+          <Link href="/" onClick={handleRouteClick("/")} className="inline-flex items-center gap-3" aria-label="itschekuri home">
             <Image src="/images/brand-logo.png" alt="itschekuri" width={280} height={94} priority className="h-16 w-auto" />
           </Link>
 
@@ -29,6 +40,7 @@ export function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
+                  onClick={handleRouteClick(item.href)}
                   className={cn(
                     "relative py-2 text-sm font-medium text-zinc-300 transition hover:text-white",
                     active && "text-white",
@@ -44,7 +56,7 @@ export function Navbar() {
           </div>
 
           <div className="hidden lg:block">
-            <ButtonLink href="/connect" variant="secondary" className="min-h-11 px-5">
+            <ButtonLink href="/connect" variant="secondary" className="min-h-11 px-5" onClick={handleRouteClick("/connect")}>
               Let's Connect
             </ButtonLink>
           </div>
@@ -74,7 +86,7 @@ export function Navbar() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    onClick={() => setOpen(false)}
+                    onClick={handleRouteClick(item.href)}
                     className="rounded-[8px] border border-white/10 bg-white/[0.03] px-4 py-3 text-sm font-semibold text-zinc-100"
                   >
                     {item.label}

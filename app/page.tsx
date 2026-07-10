@@ -10,7 +10,7 @@ import { ServiceCard } from "@/components/service-card";
 import { caseStudies, expertise, services, whatIDo } from "@/data/site";
 
 const stats = [
-  { label: "Years Experience", value: "10+" },
+  { label: "Years Experience", value: "5+" },
   { label: "Projects Delivered", value: "50+" },
   { label: "Technologies", value: "20+" },
   { label: "Client Focused", value: "100%" },
